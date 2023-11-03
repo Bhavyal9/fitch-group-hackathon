@@ -53,12 +53,12 @@ export const Cart = () => {
         let t =
           count[id] *
           eventList.find((e) => {
-            return e.id === Number(id);
-          })?.price;
+            return e.id === +id;
+          })?.acf.price;
+        setTotal((tot) => tot + t);
       });
     }
   }, [count, eventList]);
-  console.log("t", total);
   return (
     <div>
       <h1>All Events</h1>
@@ -77,16 +77,17 @@ export const Cart = () => {
                     onChange={(e) => {
                       handleCount(items.id, e.target.value);
                     }}
-                  ></input>
+                  />
                 </div>
                 <p>
-                  Amnt:{count[items.id] ? count[items.id] * items.price : 0}
+                  Amnt:{" "}
+                  {count[items.id] ? +count[items.id] * +items.acf.price : 0}
                 </p>
               </div>
             </>
           );
         })}
-        <p>Total:{total}</p>
+        <p>Total: {total} BGN</p>
       </div>
     </div>
   );
