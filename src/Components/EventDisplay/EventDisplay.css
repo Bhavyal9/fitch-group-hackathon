@@ -1,0 +1,51 @@
+.event-image {
+  width: 50%;
+  height: 400px;
+}
+
+.eventDisplay {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  gap: 60px;
+}
+
+.details {
+  width: 50%;
+}
+
+.title {
+  font-weight: 600px;
+  font-size: 30px;
+}
+
+.location,
+.date,
+.time {
+  margin-top: 15px;
+}
+
+.price {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 70px;
+}
+
+.event-button {
+  background-color: #e71b23;
+  color: white;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.discription {
+  margin: 50px 50px 10px;
+}
+
+.desc {
+  line-height: 2;
+  margin: 0px 50px 50px;
+  text-align: justify;
+}

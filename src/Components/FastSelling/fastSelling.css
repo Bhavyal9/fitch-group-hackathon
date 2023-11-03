@@ -1,0 +1,17 @@
+.fastSelling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+.fastSelling h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.fastsellling-events {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
